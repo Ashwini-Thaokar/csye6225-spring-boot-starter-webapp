@@ -6,6 +6,7 @@ sudo: false
 install: true
 
 script:
+<<<<<<< HEAD
   - buildscript {
         ext {
             springBootVersion = '1.5.6.RELEASE'
@@ -86,3 +87,11 @@ notifications:
   email:
 recipients:
   - thaokar.a@husky.neu.edu
+=======
+  - ./gradlew war
+
+notifications:
+  email:
+    recipients:
+- thaokar.a@husky.neu.edu
+>>>>>>> aaa171fcb5f6a97a84acec308dde7ae77f9426b1
